@@ -66,7 +66,7 @@ span{
 }
 
 ul,h5,h6{
-	font-size: 12px;
+	font-size: 10px;
 }
 
 p{
@@ -85,7 +85,7 @@ button{
 	 	
 	 	a{
 	color: teal;
-	font-size:12px;
+	font-size:8px;
 	border-radius: 8px;
 	padding: 2px;
 	background-color: teal;
@@ -210,6 +210,20 @@ border-radius: 20px;
 padding: 1px;
 margin-top: 6px;
 }
+
+/* Center navbar links horizontally */
+.navbar-nav {
+  float: none;
+  margin: 0 auto;
+  display: table;
+  table-layout: fixed;
+}
+
+.navbar-nav > li {
+  float: none;
+  display: inline-block;
+}
+ /* Center navbar links horizontally */
 	</style>
 	
  </head>
@@ -235,10 +249,10 @@ margin-top: 6px;
       <ul class="nav navbar-nav">
         <li><a onclick="africaOnlineHome();color(this);" style="color: orange;"><mark>🏡Home</mark></a></li>
         
-        <li><a onclick="color(this);Gemini();" style="background: teal;" href="#"><mark>🤖Gemini</mark></a></li>
-        
-        <li class="dropdown">
-          <a onclick="color(this)" style="color: orange; background: teal; border: solid orange 1px;" data-toggle="dropdown" class="dropdown-toggle" href="#"> <mark>📄Option<b class="caret"></b></mark></a>
+        <li><a onclick="color(this);Gemini();" style="background: teal;"><mark>🤖Gemini</mark></a></li>
+
+          <li class="dropdown">
+          <a onclick="color(this)" style="color: orange; background: teal; border: solid orange 1px;" data-toggle="dropdown" class="dropdown-toggle"> <mark>Option<b class="caret"></b></mark></a>
           
           <ul role="menu" class="dropdown-menu">
             
